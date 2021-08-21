@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="btn_Cal">#FFFFFF</color>
     <color name="Tempreture_Calculator">#CCFFEB3B</color>
+    <color name="textView_Header">#FFFFFF</color>
 </resources>

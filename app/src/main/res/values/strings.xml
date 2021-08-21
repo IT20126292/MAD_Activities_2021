@@ -7,4 +7,5 @@
     <string name="btn_Cal">CALCULATE</string>
     <string name="result">result</string>
     <string name="tview_result">result</string>
+    <string name="textView_Header">TEMPRETURE CALCULATOR</string>
 </resources>
