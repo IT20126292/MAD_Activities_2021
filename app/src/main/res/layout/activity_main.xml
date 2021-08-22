@@ -8,25 +8,47 @@
     android:background="@color/purple_200"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/Temp_iNPUT"
+    <TextView
+        android:id="@+id/textView_Header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/textView_Header"
+        android:textColor="@color/textView_Header"
+        android:textSize="24sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/Temp_iNPUT"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/Temp_iNPUT"
         android:inputType="numberDecimal"
+        android:textColorHint="@color/hint_Color"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Header" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Header"
+        tools:ignore="TextContrastCheck" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Temp_iNPUT">
 
@@ -34,43 +56,53 @@
             android:id="@+id/rd_Celcius"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
-            android:text="@string/rd_Celcius" />
+            android:fontFamily="sans-serif-black"
+            android:minHeight="48dp"
+            android:text="@string/rd_Celcius"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/rd_Faren"
             android:layout_width="181dp"
             android:layout_height="wrap_content"
-            android:text="@string/rd_Faren" />
+            android:fontFamily="sans-serif-black"
+            android:minHeight="48dp"
+            android:text="@string/rd_Faren"
+            android:textSize="16sp" />
     </RadioGroup>
-
-    <Button
-        android:id="@+id/btn_Cal"
-        android:layout_width="151dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="64dp"
-        android:background="#8BC34A"
-        android:text="@string/btn_Cal"
-        android:textColor="@color/btn_Cal"
-        app:layout_constraintEnd_toStartOf="@+id/tview_result"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/tview_result"
-        android:layout_width="163dp"
-        android:layout_height="47dp"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:hint="@string/tview_result"
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_Cal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_Cal" />
+        app:layout_constraintStart_toEndOf="@+id/btn_Cal"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_Cal"
+        android:layout_width="174dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#8BC34A"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/btn_Cal"
+        android:textColor="#37474F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tview_result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -81,21 +113,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Cal"
-        app:srcCompat="@drawable/temperature" />
-
-    <TextView
-        android:id="@+id/textView_Header"
-        android:layout_width="349dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="28dp"
-        android:gravity="center"
-        android:text="@string/textView_Header"
-        android:textColor="@color/textView_Header"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/temperature"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

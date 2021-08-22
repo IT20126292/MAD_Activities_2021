@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Tempreture_Cal</string>
     <string name="txt1">Enter Value Here</string>
-    <string name="Temp_iNPUT">Enter Value Here</string>
     <string name="rd_Celcius">Celcius</string>
     <string name="rd_Faren">Fahrenhite</string>
     <string name="btn_Cal">CALCULATE</string>
     <string name="result">result</string>
     <string name="tview_result">result</string>
     <string name="textView_Header">TEMPRETURE CALCULATOR</string>
+    <string name="Temp_iNPUT">Enter Value Here</string>
 </resources>

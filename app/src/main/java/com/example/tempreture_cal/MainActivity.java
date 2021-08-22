@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
          btn_Cal.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
+
                  calculateAnswer();
              }
          });

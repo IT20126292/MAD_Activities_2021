@@ -10,4 +10,6 @@
     <color name="btn_Cal">#FFFFFF</color>
     <color name="Tempreture_Calculator">#CCFFEB3B</color>
     <color name="textView_Header">#FFFFFF</color>
+    <color name="sample">#BB86FC</color>
+    <color name="hint_Color">#4D000000</color>
 </resources>
