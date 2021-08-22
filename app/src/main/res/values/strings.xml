@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Camera_App</string>
+    <string name="btn_TakePhoto">TAKE A PHOTO</string>
+    <string name="header">My Camera Viewer</string>
+</resources>
