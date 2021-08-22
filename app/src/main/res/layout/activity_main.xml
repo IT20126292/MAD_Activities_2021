@@ -5,7 +5,7 @@
     android:id="@+id/Cam_Temp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Cam_temp"
+    android:background="@drawable/image"
     tools:context=".MainActivity">
 
     <Button
@@ -30,10 +30,12 @@
         android:adjustViewBounds="false"
         android:background="@drawable/border"
         android:fadingEdge="horizontal"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="@+id/btn_TakePhoto"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/btn_TakePhoto"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
 
     <TextView
         android:id="@+id/header"
