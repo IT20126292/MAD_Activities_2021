@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Intents_Project</string>
+    <string name="textView1">NUMBER 1</string>
+    <string name="textView2">NUMBER 2</string>
+    <string name="txt_input1">Enter Value Here</string>
+    <string name="txt_input2">Enter Value Here</string>
+    <string name="btn_Ok">OK</string>
+    <string name="header">CALCULATOR</string>
+    <string name="textView_result">result</string>
+</resources>
